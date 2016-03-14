@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/open_perfil"
+        android:numericShortcut="@string/open_perfil_code"
+        android:title="@string/open_perfil" />
+
+    <item
+        android:id="@+id/clear_chat"
+        android:numericShortcut="@string/clear_chat_code"
+        android:title="@string/clear_chat" />
+
+    <item
+        android:id="@+id/mark_unread"
+        android:numericShortcut="@string/mark_unread_code"
+        android:title="@string/mark_unread" />
+
+    <item
+        android:id="@+id/send_to_email"
+        android:numericShortcut="@string/send_to_email_code"
+        android:title="@string/send_to_email" />
+</menu>

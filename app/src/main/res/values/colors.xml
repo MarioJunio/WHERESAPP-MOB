@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">@android:color/white</color>
+    <color name="chat_user_reply_background_color">#c8f0ff</color>
+    <color name="chat_company_reply_background_color">#F5F5F5</color>
+    <color name="gray">#757575</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="orange">@android:color/holo_blue_light</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <color name="deep_orange">#FF5722</color>
+    <color name="gold_orange">#EF6C00</color>
+    <color name="app_color">#5e7703</color>
+    <color name="light_app_color">#85a904</color>
+    <color name="light_orange">#FFCCBC</color>
+    <color name="light_gray">#CFD8DC</color>
+    <color name="light_green">#8BC34A</color>
+    <color name="light_red">#F44336</color>
+    <color name="white_smooth">#F5F5F5</color>
+    <color name="light_silver">#E0E0E0</color>
+    <color name="light_silver_1">#E7E7E7</color>
+    <color name="silver">#9E9E9E</color>
+    <color name="black">#313030</color>
+    <color name="light_blue">#81D4FA</color>
+    <color name="white_silver">#EBE6EA</color>
+    <color name="unread_message">#8BC34A</color>
+    <color name="smooth_gray">#9E9E9E</color>
+    <color name="light_gray1">#E8E8E8</color>
+    <color name="light_gray2">#D8D8D8</color>
+    <color name="chat_background">#f3efea</color>
+    <color name="green">#4CAF50</color>
+
+</resources>

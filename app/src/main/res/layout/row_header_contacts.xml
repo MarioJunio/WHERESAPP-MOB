@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/app_color"
+    android:elevation="5dp"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_radius"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/in_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/layout_refresh"
+            android:hint="Buscar contato..."
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_silver"
+            android:textSize="16dp" />
+
+        <FrameLayout
+            android:id="@+id/layout_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/bt_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_refresh"
+                android:tint="@color/light_app_color" />
+
+            <ProgressBar
+                android:id="@+id/progress_refresh"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/light_app_color"
+                android:indeterminateTintMode="src_atop"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

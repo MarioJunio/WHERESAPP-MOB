@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/light_silver" />
+        </shape>
+    </item>
+    <item android:left="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white_smooth" />
+        </shape>
+    </item>
+</layer-list><!-- From: file:/Users/MarioJ/AndroidStudioProjects/WheresApp3/app/src/main/res/drawable/border_left.xml -->

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="Theme.Wheresapptheme" parent="@style/Theme.AppCompat.NoActionBar">
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimary">@color/app_color</item>
+        <item name="colorPrimaryDark">@color/app_color</item>
+        <item name="colorAccent">@color/app_color</item>
+
+        <item name="colorButtonNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white_smooth</item>
+        <item name="colorControlHighlight">@color/white_silver</item>
+
+    </style>
+
+    <style name="PopupMenu" parent="@style/ThemeOverlay.AppCompat.Light"></style>
+
+    <style name="LineDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:background">@color/app_color</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="HelpText" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/app_color</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="PhoneText" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/app_color</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+    <style name="IC_Edit_Button" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@drawable/border_left</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+
+    <style name="chat_text_message_style">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="chat_text_message_style_right">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="chat_message_time">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="button_update_perfil" parent="Widget.AppCompat.Button.Colored">
+
+        <item name="colorButtonNormal">@color/orange</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+</resources>

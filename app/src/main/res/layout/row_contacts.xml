@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    card_view:cardElevation="1dp"
+    card_view:cardPreventCornerOverlap="false">
+
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <br.com.widgets.CircleImageView
+            android:id="@+id/picture"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="top"
+            android:src="@drawable/ic_contact"
+            app:civ_border_color="#CFD8DC"
+            app:civ_border_width="0dp"
+            app:paddingStart="10dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/message"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/message"
+            android:layout_toLeftOf="@+id/tip"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="Contact name goes here, because the width is short for long names"
+            android:textColor="@android:color/black"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/picture"
+            android:layout_alignEnd="@+id/tip"
+            android:layout_alignRight="@+id/tip"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/picture"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:text="Some message goes here or status goes here too"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/message"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/name"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:textSize="8sp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

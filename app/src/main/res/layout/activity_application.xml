@@ -1,0 +1,48 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_applicaton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <com.astuetz.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/app_color"
+            android:textColor="@color/white"
+            app:pstsDividerColor="@android:color/transparent"
+            app:pstsIndicatorColor="@color/light_app_color"
+            app:pstsIndicatorHeight="5dp"
+            app:pstsShouldExpand="true"
+            app:pstsTextAllCaps="true"
+            app:pstsUnderlineColor="@color/black"
+            app:pstsUnderlineHeight="0dp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawer_box"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#ffffff" />
+
+</android.support.v4.widget.DrawerLayout>

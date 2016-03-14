@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <br.com.widgets.CircleImageView
+        android:id="@+id/picture"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top"
+        android:src="@drawable/ic_contact"
+        app:civ_border_color="#CFD8DC"
+        app:civ_border_width="0dp"
+        app:paddingStart="10dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/message_status"
+        android:layout_alignStart="@+id/message_status"
+        android:layout_alignTop="@+id/picture"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="Contact name goes here, because the width is short for long names"
+        android:textColor="@android:color/black"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/tip"
+        android:layout_toStartOf="@+id/tip" />
+
+    <ImageView
+        android:id="@+id/message_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/picture"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/picture"
+        android:layout_toRightOf="@+id/picture"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/ic_single_tick" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tip"
+        android:layout_alignRight="@+id/tip"
+        android:layout_alignTop="@+id/message_status"
+        android:layout_toRightOf="@+id/message_status"
+        android:singleLine="true"
+        android:text="Some message goes here or status goes here too"
+        android:textColor="@color/gray"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/name"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:text="21:52"
+        android:textColor="@color/gray"
+        android:textSize="11dp" />
+
+</RelativeLayout>

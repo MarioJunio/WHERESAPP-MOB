@@ -1,0 +1,143 @@
+<br.com.widgets.SizeNotifierRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chat_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chat_background"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="br.com.fragments.ChatFragment">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/chat_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_color"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <br.com.widgets.CircleImageView
+                android:id="@+id/photo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_contact"
+                app:civ_border_color="#CFD8DC"
+                app:civ_border_width="0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="Arial"
+                    android:singleLine="true"
+                    android:text="Mario testando tamanho maximo do nome"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="Arial"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/message_type"
+        android:layout_below="@+id/chat_toolbar"
+        android:layout_centerHorizontal="true"
+        android:overScrollMode="ifContentScrolls"
+        android:paddingBottom="5dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical" />
+
+    <RelativeLayout
+        android:id="@+id/message_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/input_radius"
+        android:elevation="2dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/emojiButton"
+            android:layout_width="60dp"
+            android:layout_height="57dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_msg_panel_smiles"
+            android:tint="@color/light_gray2" />
+
+        <EditText
+            android:id="@+id/text_message"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/emojiButton"
+            android:layout_toLeftOf="@+id/bt_send"
+            android:layout_toRightOf="@id/emojiButton"
+            android:layout_toStartOf="@+id/bt_send"
+            android:background="@android:color/transparent"
+            android:hint="@string/type_message"
+            android:inputType="textCapSentences"
+            android:maxLines="4"
+            android:scrollHorizontally="false"
+            android:singleLine="false"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_gray1"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/bt_send"
+            android:layout_width="60dp"
+            android:layout_height="57dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@drawable/bt_chat_send"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</br.com.widgets.SizeNotifierRelativeLayout>

@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_configuration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_silver"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="br.com.fragments.ConfigurationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/help_text"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Informe seu número de acordo com o código de seu país e o código de área local"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_radius"
+        android:elevation="2dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_phone"
+            android:tint="@color/smooth_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="+"
+            android:gravity="center"
+            android:textColor="@color/smooth_gray"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inDDI"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:hint="@string/country"
+            android:inputType="numberSigned"
+            android:maxLength="3"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/inNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:background="@android:color/transparent"
+            android:hint="@string/number"
+            android:layout_marginLeft="10dp"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+    </LinearLayout>
+
+</RelativeLayout>

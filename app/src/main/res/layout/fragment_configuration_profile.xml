@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.widgets.SizeNotifierRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="br.com.fragments.ConfigurationProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/frame_picture"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_account_gray" />
+
+                <ProgressBar
+                    android:id="@+id/progress_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/white"
+                    android:indeterminateTintMode="src_atop"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frame_picture"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_contact"
+                        android:tint="@color/light_gray2" />
+
+                    <EditText
+                        android:id="@+id/field_nome"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toEndOf="@+id/imageView3"
+                        android:layout_toRightOf="@+id/imageView3"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:hint="@string/field_name"
+                        android:maxLength="32"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/light_gray1"
+                        android:textSize="8pt" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ic_emoji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_msg_panel_smiles"
+                        android:tint="@color/light_gray2" />
+
+                    <EditText
+                        android:id="@+id/field_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toEndOf="@+id/ic_emoji"
+                        android:layout_toRightOf="@+id/ic_emoji"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:hint="@string/field_stauts"
+                        android:maxLength="255"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/light_gray1"
+                        android:textSize="8pt" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/in"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="@string/help1_profile_photo"
+                android:textColor="@color/black"
+                android:textSize="11dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</br.com.widgets.SizeNotifierRelativeLayout>
