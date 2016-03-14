@@ -114,8 +114,7 @@ public class ChatFragment extends Fragment implements SizeNotifierRelativeLayout
         }
 
         @Override
-        public void afterTextChanged(Editable editable) {
-        }
+        public void afterTextChanged(Editable editable) {}
     };
 
     @Override
